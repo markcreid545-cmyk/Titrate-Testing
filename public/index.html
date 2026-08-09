@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Titrate Testing — Independent Peptide Verification</title>
+<meta name="description" content="Independent, vendor-blind lab verification for peptides. Look up a Certificate of Analysis, check vendor track records, or submit your own sample.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink:#0F2027;
+    --ink-soft:#3E4D52;
+    --muted:#6B7A7E;
+    --bg:#F1F3F0;
+    --surface:#FFFFFF;
+    --border:#DCE1DC;
+    --teal:#1F8A82;
+    --teal-dim:#E4F1EF;
+    --amber:#C97A2B;
+    --amber-dim:#F7ECDE;
+    --red:#B23A3A;
+    --red-dim:#F6E7E7;
+    --radius:10px;
+    --max:1120px;
+  }
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    margin:0;
+    background:var(--bg);
+    color:var(--ink);
+    font-family:'Inter',system-ui,sans-serif;
+    -webkit-font-smoothing:antialiased;
+    line-height:1.5;
+  }
+  h1,h2,h3,.display{
+    font-family:'Space Grotesk',sans-serif;
+    font-weight:600;
+    letter-spacing:-0.01em;
+    color:var(--ink);
+  }
+  .mono{font-family:'IBM Plex Mono',monospace;}
+  a{color:inherit;}
+  .wrap{max-width:var(--max);margin:0 auto;padding:0 28px;}
+  @media (max-width:640px){.wrap{padding:0 18px;}}
+
+  header{
+    position:sticky;top:0;z-index:50;
+    background:rgba(241,243,240,0.9);
+    backdrop-filter:blur(8px);
+    border-bottom:1px solid var(--border);
+  }
+  .nav{display:flex;align-items:center;justify-content:space-between;padding:16px 0;}
+  .brand{display:flex;align-items:center;gap:10px;text-decoration:none;}
+  .brand svg{width:30px;height:30px;flex:none;}
+  .brand-text{display:flex;flex-direction:column;line-height:1.05;}
+  .brand-text .b1{font-family:'Space Grotesk';font-weight:700;font-size:15px;letter-spacing:0.04em;}
+  .brand-text .b2{font-family:'IBM Plex Mono';font-size:10px;letter-spacing:0.14em;color:var(--muted);}
+  nav.links{display:flex;gap:28px;font-size:14px;font-weight:500;}
+  nav.links a{text-decoration:none;color:var(--ink-soft);transition:color .15s;}
+  nav.links a:hover{color:var(--teal);}
+  .navmenu-toggle{display:none;background:none;border:none;cursor:pointer;}
+  @media (max-width:760px){
+    nav.links{display:none;}
+  }
+
+  .hero{position:relative;padding:76px 0 40px;overflow:hidden;}
+  .hero-grid{display:grid;grid-template-columns:1.1fr 0.9fr;gap:40px;align-items:center;}
+  @media (max-width:900px){.hero-grid{grid-template-columns:1fr;}}
+  .eyebrow{
+    display:inline-flex;align-items:center;gap:8px;
+    font-family:'IBM Plex Mono';font-size:11px;letter-spacing:0.12em;
+    color:var(--teal);text-transform:uppercase;margin-bottom:18px;
+  }
+  .eyebrow .dot{width:6px;height:6px;border-radius:50%;background:var(--teal);}
+  .hero h1{font-size:clamp(32px,4.6vw,54px
