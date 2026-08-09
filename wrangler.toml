@@ -1,0 +1,12 @@
+name = "titrate-testing"
+compatibility_date = "2026-08-01"
+pages_build_output_dir = "public"
+
+# This binding is only used if you run the site locally with `wrangler pages dev`.
+# The binding that actually matters for the live site is the one you set in the
+# Cloudflare dashboard (Workers & Pages > your project > Settings > Functions >
+# D1 database bindings) — see README.md, Step 4.
+[[d1_databases]]
+binding = "DB"
+database_name = "titrate-testing-db"
+database_id = "REPLACE_WITH_YOUR_DATABASE_ID"
