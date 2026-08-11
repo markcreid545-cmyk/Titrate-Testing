@@ -150,3 +150,4 @@ npm install -g wrangler
 wrangler d1 execute titrate-testing-db --local --file=./schema.sql
 wrangler pages dev public
 ```
+
